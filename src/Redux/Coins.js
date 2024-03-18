@@ -1,4 +1,4 @@
-const FETCH_COINS = 'FETCH_COINS';
+const FETCH_COINS = "FETCH_COINS";
 const initialState = [];
 
 const coinsReducer = (state = initialState, action) => {
@@ -6,7 +6,9 @@ const coinsReducer = (state = initialState, action) => {
     case FETCH_COINS: {
       return action.payload;
     }
-    default: { return state; }
+    default: {
+      return state;
+    }
   }
 };
 

@@ -1,7 +1,7 @@
-import { Line } from 'react-chartjs-2';
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { Line } from "react-chartjs-2";
+import React from "react";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,7 +9,7 @@ import {
   LinearScale,
   LineElement,
   Filler,
-} from 'chart.js';
+} from "chart.js";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Filler);
 const CoinChart = () => {
@@ -19,11 +19,11 @@ const CoinChart = () => {
   const { coinId } = useParams();
   const coin = coins.find((coin) => coin.uuid === coinId);
   if (coin.change > 0) {
-    backgroundColor = 'rgba(10, 219, 33,0.8)';
-    color = 'rgba(3, 169, 21 ,0.2)';
+    backgroundColor = "rgba(10, 219, 33,0.8)";
+    color = "rgba(3, 169, 21 ,0.2)";
   } else {
-    backgroundColor = 'rgba(232, 9, 36,0.8)';
-    color = 'rgba(205, 2, 26 ,0.2)';
+    backgroundColor = "rgba(232, 9, 36,0.8)";
+    color = "rgba(205, 2, 26 ,0.2)";
   }
   const coinPrice = [];
   for (let i = 0; i < coin.sparkline?.length; i += 1) {
@@ -39,10 +39,10 @@ const CoinChart = () => {
         borderColor: backgroundColor,
 
         pointRadius: false,
-        pointColor: '#3b8bba',
-        pointStrokeColor: 'rgba(60,141,188,1)',
-        pointHighlightFill: '#fff',
-        pointHighlightStroke: 'rgba(60,141,188,1)',
+        pointColor: "#3b8bba",
+        pointStrokeColor: "rgba(60,141,188,1)",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(60,141,188,1)",
         fill: true,
       },
     ],
@@ -55,7 +55,7 @@ const CoinChart = () => {
     hover: true,
 
     legend: {
-      display: '',
+      display: "",
     },
     tooltip: {
       enabled: false,

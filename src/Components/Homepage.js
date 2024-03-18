@@ -1,9 +1,9 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import fetchCoins from '../Redux/api';
-import Coin from './coin';
-import { setCoins } from '../Redux/Coins';
-import Navbar from './Navbar';
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import fetchCoins from "../Redux/api";
+import Coin from "./coin";
+import { setCoins } from "../Redux/Coins";
+import Navbar from "./Navbar";
 
 const Homepage = () => {
   const coins = useSelector((state) => state.coins);
@@ -16,7 +16,10 @@ const Homepage = () => {
     initialData();
     return (
       <div className="text-center">
-        <div className=" text-center p-4 spinner-grow text-light" role="status" />
+        <div
+          className=" text-center p-4 spinner-grow text-light"
+          role="status"
+        />
       </div>
     );
   }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { FiSettings, FiMic } from 'react-icons/fi';
+import React from "react";
+import { FiSettings, FiMic } from "react-icons/fi";
 
 const Navbar = () => (
   <>
@@ -15,9 +15,8 @@ const Navbar = () => (
         </div>
         <ul>
           <li className="float-left mr-5 text-2xl">
-            {' '}
-            <FiMic />
-            {' '}
+            {" "}
+            <FiMic />{" "}
           </li>
           <li className="float-left text-2xl">
             <FiSettings />

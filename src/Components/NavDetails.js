@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FiSettings, FiMic, FiChevronLeft } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { FiSettings, FiMic, FiChevronLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const NavDetails = ({ coin }) => (
   <>
@@ -17,9 +17,8 @@ const NavDetails = ({ coin }) => (
         </div>
         <ul>
           <li className="float-left mr-5 text-2xl">
-            {' '}
-            <FiMic />
-            {' '}
+            {" "}
+            <FiMic />{" "}
           </li>
           <li className="float-left text-2xl">
             <FiSettings />

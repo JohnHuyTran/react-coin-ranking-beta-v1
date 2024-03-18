@@ -4,11 +4,12 @@ Coin Ranking is a Single Page App (SPA) that displays cryptocurrency data fetche
 Users can view cryptocurrency data and the current value of the coin on the stock market.
 
 ## Live Demo
+
 [Live Site](https://lambent-lily-c9744c.netlify.app)
 
 ## Built With
 
-###### Languages 
+###### Languages
 
 - React
 - Redux
@@ -18,7 +19,6 @@ Users can view cryptocurrency data and the current value of the coin on the stoc
 # Getting started
 
 To get a local copy up and running follow these simple example steps.
-
 
 - git clone https://github.com/Kwaleyela-Ikafa/react-js-capstone.git
 - cd react-js-capstone
@@ -94,5 +94,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-"# react-coin-ranking-beta" 
-"# react-coin-ranking-beta-v1" 
+"# react-coin-ranking-beta"
+"# react-coin-ranking-beta-v1"
